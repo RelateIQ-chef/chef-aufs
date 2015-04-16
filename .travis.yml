@@ -1,8 +1,10 @@
 language: ruby
+sudo: false
 bundler_args: --without integration
 rvm:
   - 1.9.3
 before_script:
   - bundle exec berks install
+  - apt-get -y install gecode
 script:
   - bundle exec rake travis
