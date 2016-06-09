@@ -1,11 +1,11 @@
 require 'chefspec'
 require 'chefspec/berkshelf'
+require_relative 'support/matchers'
 
-# See https://github.com/sethvargo/chefspec/issues/393
-# ChefSpec::Coverage.start!
+ChefSpec::Coverage.start!
 
 RSpec.configure do |config|
   config.log_level = :error
   config.platform = 'ubuntu'
-  config.version = '12.04'
+  config.version = '14.04'
 end
