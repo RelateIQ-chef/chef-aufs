@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rake'
 
 group :test, :integration do
-  gem 'berkshelf', '~> 2.0.14'
+  gem 'berkshelf', '~> 3.0'
 end
 
 group :test do
@@ -13,9 +13,7 @@ group :test do
 end
 
 group :integration do
-  gem 'busser-serverspec', '~> 0.2.6'
-  gem 'kitchen-vagrant', '~> 0.14'
-  gem 'test-kitchen', '~> 1.1'
+  gem 'test-kitchen', '~> 1.3'
 end
 
 # group :development do
